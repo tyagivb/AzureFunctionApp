@@ -16,7 +16,7 @@ namespace AzureTangyFunc
         [FunctionName("OnSalesUploadWriteToQueue")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
-             [Queue("SalesRequestInBound", Connection = "AzureWebJobsStorage")] IAsyncCollector<SalesRequest> salesRequestQueue,
+             [Queue("salesrequestinbound", Connection = "AzureWebJobsStorage")] IAsyncCollector<SalesRequest> salesRequestQueue,
             ILogger log)
         {
             log.LogInformation("Sales Request Received by OnSalesUploadWriteToQueue function");
