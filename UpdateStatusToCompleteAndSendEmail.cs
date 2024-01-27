@@ -14,6 +14,7 @@ namespace AzureTangyFunc
     {
         private readonly AzureTangyDbContext _dbContext;
 
+
         public UpdateStatusToCompleteAndSendEmail(AzureTangyDbContext dbContext)
         {
             _dbContext = dbContext;
@@ -30,7 +31,7 @@ namespace AzureTangyFunc
             _dbContext.UpdateRange(salesRequestData);
            await _dbContext.SaveChangesAsync();
 
-            //send mail functionality is pending
+            //send mail functionality is pending code
            
         }
     }
