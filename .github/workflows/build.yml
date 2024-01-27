@@ -40,4 +40,4 @@ jobs:
           app-name: 'tangyazurewebfunc'
           slot-name: 'Production'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_460C7056EE894FC8AAF3BAEF4BD72162 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_97E806E2BA0E45AFB101B99BA3C6B988 }}
